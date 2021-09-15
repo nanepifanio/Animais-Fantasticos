@@ -1,0 +1,2 @@
+# Animais Fantásticos
+ Projeto em andamento, sendo feito através do curso "Origamid".  Nele, estou aprendendo implementar diversos eventos Javascript, além do curso em geral estar me proporcionando ter conhecimento profundo sobre a linguagem, pois o mesmo não gira em torno só do projeto, tem uma rica parte teórica.  Ao avançar mais no  curso, mais funcionalidades serão adicionadas ao projeto, como consumo de API para mostrar o preço atualizado de certa quantia de dinheiro em bitcoin..
