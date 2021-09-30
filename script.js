@@ -3,17 +3,21 @@ const qsa = (elemento) => document.querySelectorAll(elemento);
 
 function initTabNav() {
   const imgsAnimais = qsa(".animais-lista li");
-  const animaisSection = qsa(".animais-descricao section");
+  const animaisSection = qsa("[data-anime]");
   const activeClass = "ativo";
 
   if (animaisSection.length && imgsAnimais.length) {
-    animaisSection[0].classList.add(activeClass);
+    animaisSection[0].classList.add(
+      animaisSection[0].dataset.anime,
+      activeClass
+    );
 
     function toAnimalDescription(index) {
+      const dataAnime = animaisSection[index].dataset.anime;
       animaisSection.forEach((section) => {
         section.classList.remove(activeClass);
       });
-      animaisSection[index].classList.add(activeClass);
+      animaisSection[index].classList.add(activeClass, dataAnime);
     }
 
     imgsAnimais.forEach((img, index) => {
