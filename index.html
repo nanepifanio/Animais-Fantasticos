@@ -28,25 +28,29 @@
       </nav>
     </header>
 
-    <section class="grid-section animais" id="animais">
+    <section
+      class="grid-section animais"
+      id="animais"
+      data-section-anime="scrollAnime"
+    >
       <h1 class="titulo">Animais Fantásticos</h1>
       <ul class="animais-lista">
-        <li>
+        <li data-animais="tabNav">
           <img src="img/imagem1.jpg" alt="Raposa" />
         </li>
-        <li>
+        <li data-animais="tabNav">
           <img src="img/imagem2.jpg" alt="Esquilo" />
         </li>
-        <li>
+        <li data-animais="tabNav">
           <img src="img/imagem3.jpg" alt="Urso" />
         </li>
-        <li>
+        <li data-animais="tabNav">
           <img src="img/imagem4.jpg" alt="Lobo" />
         </li>
-        <li>
+        <li data-animais="tabNav">
           <img src="img/imagem5.jpg" alt="Macaco" />
         </li>
-        <li>
+        <li data-animais="tabNav">
           <img src="img/imagem6.jpg" alt="Leão" />
         </li>
       </ul>
@@ -181,28 +185,28 @@
       </div>
     </section>
 
-    <section class="grid-section faq" id="faq">
+    <section class="grid-section faq" id="faq" data-section-anime="scrollAnime">
       <h1 class="titulo">FAQ</h1>
       <dl class="faq-lista">
-        <dt>Qual a idade dos animais?</dt>
+        <dt data-faq-anime="accordion">Qual a idade dos animais?</dt>
         <dd>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
           vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
           Magnam?
         </dd>
-        <dt>Eles são fantásticos?</dt>
+        <dt data-faq-anime="accordion">Eles são fantásticos?</dt>
         <dd>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
           vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
           Magnam?
         </dd>
-        <dt>Qual a diferença?</dt>
+        <dt data-faq-anime="accordion">Qual a diferença?</dt>
         <dd>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
           vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
           Magnam?
         </dd>
-        <dt>Como proteger?</dt>
+        <dt data-faq-anime="accordion">Como proteger?</dt>
         <dd>
           Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
           vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
@@ -211,7 +215,11 @@
       </dl>
     </section>
 
-    <section class="grid-section contato" id="contato">
+    <section
+      class="grid-section contato"
+      id="contato"
+      data-section-anime="scrollAnime"
+    >
       <h1 class="titulo">Contato</h1>
       <div class="mapa">
         <img src="img/mapa.png" alt="Mapa" />
@@ -228,7 +236,6 @@
       <p>Todos os direitos reservados.</p>
     </footer>
 
-    <script src="aula.js"></script>
-    <script src="script.js"></script>
+    <script type="module" src="javascript/script.js"></script>
   </body>
 </html>
