@@ -18,3 +18,6 @@ initToolTip();
 
 import initDropDownMenu from "./dropdown-menu.js";
 initDropDownMenu();
+
+import initMenuMobile from "./menu-mobile.js";
+initMenuMobile();
