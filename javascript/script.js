@@ -12,3 +12,6 @@ initScrollAnimation();
 
 import initModal from "./modal.js";
 initModal();
+
+import initToolTip from "./tooltip.js";
+initToolTip();
