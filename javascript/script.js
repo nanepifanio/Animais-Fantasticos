@@ -9,3 +9,6 @@ initSmoothScroll();
 
 import initScrollAnimation from "./scrollAnimation.js";
 initScrollAnimation();
+
+import initModal from "./modal.js";
+initModal();

@@ -11,230 +11,250 @@
       href="https://fonts.googleapis.com/css2?family=Playfair+Display+SC&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <script>
       document.documentElement.classList.add("js");
     </script>
   </head>
   <body>
-    <header class="header">
-      <nav class="header-menu">
-        <ul class="lista-menu">
-          <li><a href="#animais">ANIMAIS</a></li>
-          <li><a href="#faq">FAQ</a></li>
-          <li><a href="#contato">CONTATO</a></li>
-          <li><a href="https://www.devepifanio.com/">DEV &rarr;</a></li>
+    <div class="grid-container">
+      <header class="header">
+        <nav class="header-menu">
+          <ul class="lista-menu">
+            <li><a href="#animais">ANIMAIS</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contato">CONTATO</a></li>
+            <li>
+              <a data-modal="abrir" href="login.html">LOGIN &rarr;</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section
+        class="grid-section animais"
+        id="animais"
+        data-section-anime="scrollAnime"
+      >
+        <h1 class="titulo">Animais Fantásticos</h1>
+        <ul class="animais-lista">
+          <li data-animais="tabNav">
+            <img src="img/imagem1.jpg" alt="Raposa" />
+          </li>
+          <li data-animais="tabNav">
+            <img src="img/imagem2.jpg" alt="Esquilo" />
+          </li>
+          <li data-animais="tabNav">
+            <img src="img/imagem3.jpg" alt="Urso" />
+          </li>
+          <li data-animais="tabNav">
+            <img src="img/imagem4.jpg" alt="Lobo" />
+          </li>
+          <li data-animais="tabNav">
+            <img src="img/imagem5.jpg" alt="Macaco" />
+          </li>
+          <li data-animais="tabNav">
+            <img src="img/imagem6.jpg" alt="Leão" />
+          </li>
         </ul>
-      </nav>
-    </header>
+        <div class="animais-descricao">
+          <section data-anime="show-down">
+            <h2>Raposa</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              quisquam quia numquam eveniet, tempora magnam dolore consectetur!
+              Minus culpa in ipsa maxime nobis itaque saepe!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              aliquid cumque ea a, ipsum quasi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              accusantium excepturi minima, temporibus repellat amet ratione
+              laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+              fugiat voluptatum, sequi nesciunt debitis incidunt.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Esquilo</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              quisquam quia numquam eveniet, tempora magnam dolore consectetur!
+              Minus culpa in ipsa maxime nobis itaque saepe!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              aliquid cumque ea a, ipsum quasi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              accusantium excepturi minima, temporibus repellat amet ratione
+              laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+              fugiat voluptatum, sequi nesciunt debitis incidunt.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Urso</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              quisquam quia numquam eveniet, tempora magnam dolore consectetur!
+              Minus culpa in ipsa maxime nobis itaque saepe!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              aliquid cumque ea a, ipsum quasi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              accusantium excepturi minima, temporibus repellat amet ratione
+              laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+              fugiat voluptatum, sequi nesciunt debitis incidunt.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Lobo</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              quisquam quia numquam eveniet, tempora magnam dolore consectetur!
+              Minus culpa in ipsa maxime nobis itaque saepe!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              aliquid cumque ea a, ipsum quasi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              accusantium excepturi minima, temporibus repellat amet ratione
+              laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+              fugiat voluptatum, sequi nesciunt debitis incidunt.
+            </p>
+          </section>
+          <section data-anime="show-down">
+            <h2>Macaco</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              quisquam quia numquam eveniet, tempora magnam dolore consectetur!
+              Minus culpa in ipsa maxime nobis itaque saepe!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              aliquid cumque ea a, ipsum quasi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              accusantium excepturi minima, temporibus repellat amet ratione
+              laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+              fugiat voluptatum, sequi nesciunt debitis incidunt.
+            </p>
+          </section>
+          <section data-anime="show-right">
+            <h2>Leão</h2>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
+              quisquam quia numquam eveniet, tempora magnam dolore consectetur!
+              Minus culpa in ipsa maxime nobis itaque saepe!
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
+              aliquid cumque ea a, ipsum quasi.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
+              accusantium excepturi minima, temporibus repellat amet ratione
+              laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
+            </p>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
+              fugiat voluptatum, sequi nesciunt debitis incidunt.
+            </p>
+          </section>
+        </div>
+      </section>
+      <section
+        class="grid-section faq"
+        id="faq"
+        data-section-anime="scrollAnime"
+      >
+        <h1 class="titulo">FAQ</h1>
+        <dl class="faq-lista">
+          <dt data-faq-anime="accordion">Qual a idade dos animais?</dt>
+          <dd>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
+            Magnam?
+          </dd>
+          <dt data-faq-anime="accordion">Eles são fantásticos?</dt>
+          <dd>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
+            Magnam?
+          </dd>
+          <dt data-faq-anime="accordion">Qual a diferença?</dt>
+          <dd>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
+            Magnam?
+          </dd>
+          <dt data-faq-anime="accordion">Como proteger?</dt>
+          <dd>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
+            vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
+            Magnam?
+          </dd>
+        </dl>
+      </section>
+      <section
+        class="grid-section contato"
+        id="contato"
+        data-section-anime="scrollAnime"
+      >
+        <h1 class="titulo">Contato</h1>
+        <div class="mapa">
+          <img src="img/mapa.png" alt="Mapa" />
+        </div>
+        <ul class="dados">
+          <li>renan.epifanio@outlook.com</li>
+          <li>+55 (21) 98280-4785</li>
+          <li>Rua Canção Nova, Nº 35</li>
+          <li>Rio de Janeiro - RJ</li>
+        </ul>
+      </section>
+      <footer>
+        <p>Todos os direitos reservados.</p>
+      </footer>
+    </div>
 
-    <section
-      class="grid-section animais"
-      id="animais"
-      data-section-anime="scrollAnime"
-    >
-      <h1 class="titulo">Animais Fantásticos</h1>
-      <ul class="animais-lista">
-        <li data-animais="tabNav">
-          <img src="img/imagem1.jpg" alt="Raposa" />
-        </li>
-        <li data-animais="tabNav">
-          <img src="img/imagem2.jpg" alt="Esquilo" />
-        </li>
-        <li data-animais="tabNav">
-          <img src="img/imagem3.jpg" alt="Urso" />
-        </li>
-        <li data-animais="tabNav">
-          <img src="img/imagem4.jpg" alt="Lobo" />
-        </li>
-        <li data-animais="tabNav">
-          <img src="img/imagem5.jpg" alt="Macaco" />
-        </li>
-        <li data-animais="tabNav">
-          <img src="img/imagem6.jpg" alt="Leão" />
-        </li>
-      </ul>
-
-      <div class="animais-descricao">
-        <section data-anime="show-down">
-          <h2>Raposa</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            quisquam quia numquam eveniet, tempora magnam dolore consectetur!
-            Minus culpa in ipsa maxime nobis itaque saepe!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            aliquid cumque ea a, ipsum quasi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-            accusantium excepturi minima, temporibus repellat amet ratione
-            laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            fugiat voluptatum, sequi nesciunt debitis incidunt.
-          </p>
-        </section>
-        <section data-anime="show-right">
-          <h2>Esquilo</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            quisquam quia numquam eveniet, tempora magnam dolore consectetur!
-            Minus culpa in ipsa maxime nobis itaque saepe!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            aliquid cumque ea a, ipsum quasi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-            accusantium excepturi minima, temporibus repellat amet ratione
-            laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            fugiat voluptatum, sequi nesciunt debitis incidunt.
-          </p>
-        </section>
-        <section data-anime="show-down">
-          <h2>Urso</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            quisquam quia numquam eveniet, tempora magnam dolore consectetur!
-            Minus culpa in ipsa maxime nobis itaque saepe!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            aliquid cumque ea a, ipsum quasi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-            accusantium excepturi minima, temporibus repellat amet ratione
-            laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            fugiat voluptatum, sequi nesciunt debitis incidunt.
-          </p>
-        </section>
-        <section data-anime="show-right">
-          <h2>Lobo</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            quisquam quia numquam eveniet, tempora magnam dolore consectetur!
-            Minus culpa in ipsa maxime nobis itaque saepe!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            aliquid cumque ea a, ipsum quasi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-            accusantium excepturi minima, temporibus repellat amet ratione
-            laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            fugiat voluptatum, sequi nesciunt debitis incidunt.
-          </p>
-        </section>
-        <section data-anime="show-down">
-          <h2>Macaco</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            quisquam quia numquam eveniet, tempora magnam dolore consectetur!
-            Minus culpa in ipsa maxime nobis itaque saepe!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            aliquid cumque ea a, ipsum quasi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-            accusantium excepturi minima, temporibus repellat amet ratione
-            laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            fugiat voluptatum, sequi nesciunt debitis incidunt.
-          </p>
-        </section>
-        <section data-anime="show-right">
-          <h2>Leão</h2>
-          <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Mollitia
-            quisquam quia numquam eveniet, tempora magnam dolore consectetur!
-            Minus culpa in ipsa maxime nobis itaque saepe!
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga
-            aliquid cumque ea a, ipsum quasi.
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim
-            accusantium excepturi minima, temporibus repellat amet ratione
-            laborum! Ea ad ut nam ipsam maiores, ipsum magnam!
-          </p>
-          <p>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nulla
-            fugiat voluptatum, sequi nesciunt debitis incidunt.
-          </p>
-        </section>
+    <section class="modal-container" data-modal="container">
+      <div class="modal">
+        <button data-modal="fechar" class="fechar">X</button>
+        <form action="">
+          <label for="email">
+            Email
+            <input type="text" name="email" id="email" />
+          </label>
+          <label for="senha">
+            Senha
+            <input type="password" name="senha" id="senha" />
+          </label>
+          <button type="submit">Entrar</button>
+        </form>
       </div>
     </section>
-
-    <section class="grid-section faq" id="faq" data-section-anime="scrollAnime">
-      <h1 class="titulo">FAQ</h1>
-      <dl class="faq-lista">
-        <dt data-faq-anime="accordion">Qual a idade dos animais?</dt>
-        <dd>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
-          Magnam?
-        </dd>
-        <dt data-faq-anime="accordion">Eles são fantásticos?</dt>
-        <dd>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
-          Magnam?
-        </dd>
-        <dt data-faq-anime="accordion">Qual a diferença?</dt>
-        <dd>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
-          Magnam?
-        </dd>
-        <dt data-faq-anime="accordion">Como proteger?</dt>
-        <dd>
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis,
-          vitae sapiente ipsam nesciunt earum dolores quae minus nemo tempore.
-          Magnam?
-        </dd>
-      </dl>
-    </section>
-
-    <section
-      class="grid-section contato"
-      id="contato"
-      data-section-anime="scrollAnime"
-    >
-      <h1 class="titulo">Contato</h1>
-      <div class="mapa">
-        <img src="img/mapa.png" alt="Mapa" />
-      </div>
-      <ul class="dados">
-        <li>renan.epifanio@outlook.com</li>
-        <li>+55 (21) 98280-4785</li>
-        <li>Rua Canção Nova, Nº 35</li>
-        <li>Rio de Janeiro - RJ</li>
-      </ul>
-    </section>
-
-    <footer>
-      <p>Todos os direitos reservados.</p>
-    </footer>
 
     <script type="module" src="javascript/script.js"></script>
   </body>
