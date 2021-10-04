@@ -1,22 +1,20 @@
-export default function initFuncionamento() {}
+export default function initFuncionamento() {
+  const funcionamento = document.querySelector("[data-semana]");
+  if (funcionamento) {
+    const diasSemana = funcionamento.dataset.semana.split(",").map(Number);
+    const horariosSemana = funcionamento.dataset.horario.split(",").map(Number);
 
-const agora = new Date();
-const futuro = new Date("Dec 28 2021");
+    const dataAgora = new Date();
+    const diaSemana = dataAgora.getDay();
+    const horarioAgora = dataAgora.getHours();
 
-// function transformarDias(tempo) {
-//   return tempo / (24 * 60 * 60 * 1000);
-// }
+    const semanaAberto = diasSemana.some((dia) => dia === diaSemana);
 
-// const diasAgora = transformarDias(agora.getTime());
-// const diasFuturo = transformarDias(futuro.getTime());
+    const horarioAberto =
+      horarioAgora >= horariosSemana[0] && horarioAgora < horariosSemana[1];
 
-// console.log(Math.floor(diasFuturo - diasAgora));
-
-function transformarHoras(tempo) {
-  return tempo / (60 * 60 * 1000);
+    if (semanaAberto && horarioAberto) {
+      funcionamento.classList.add("aberto");
+    }
+  }
 }
-
-const horasAgora = transformarHoras(agora.getTime());
-const horasFuturo = transformarHoras(futuro.getTime());
-
-console.log(Math.floor(horasFuturo - horasAgora));

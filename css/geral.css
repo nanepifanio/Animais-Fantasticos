@@ -309,3 +309,18 @@ html.texto-maior {
 .animais-descricao section.ativo.show-down {
   animation: fadeDown 0.5s ease 1;
 }
+
+[data-semana]::after {
+  content: "";
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background-color: #ff0000;
+  border-radius: 50%;
+  margin-left: 4px;
+  border: 2px solid #000;
+}
+
+[data-semana].aberto::after {
+  background-color: #00ff00;
+}
