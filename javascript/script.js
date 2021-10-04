@@ -24,3 +24,6 @@ initMenuMobile();
 
 import initAnimaNumeros from "./anima-numeros.js";
 initAnimaNumeros();
+
+import initFuncionamento from "./funcionamento.js";
+initFuncionamento();
