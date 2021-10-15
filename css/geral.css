@@ -324,3 +324,10 @@ html.texto-maior {
 [data-semana].aberto::after {
   background-color: #00ff00;
 }
+
+.btc-preco {
+  background-color: #00ff00;
+  padding: 3.2px 8px;
+  font-weight: bold;
+  border-radius: 2px;
+}

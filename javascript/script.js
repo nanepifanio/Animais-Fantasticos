@@ -22,8 +22,11 @@ initDropDownMenu();
 import initMenuMobile from "./menu-mobile.js";
 initMenuMobile();
 
-import initAnimaNumeros from "./anima-numeros.js";
-initAnimaNumeros();
-
 import initFuncionamento from "./funcionamento.js";
 initFuncionamento();
+
+import initFetchAnimais from "./fetch-animais.js";
+initFetchAnimais();
+
+import initFetchBitcoin from "./fetch-bitcoin.js";
+initFetchBitcoin();
