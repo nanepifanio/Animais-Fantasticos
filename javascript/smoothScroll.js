@@ -1,23 +1,42 @@
-export default function initSmoothScroll() {
-  const internalLinks = document.querySelectorAll('a[href^="#"]');
+export default class SmoothScroll {
+  constructor(links, options) {
+    this.linksInternos = document.querySelectorAll(links);
+    if (options === undefined) {
+      this.options = {
+        behavior: "smooth",
+        block: "start",
+      };
+    } else {
+      this.options = options;
+    }
 
-  function toSection(event) {
-    event.preventDefault();
-    const sectionId = this.getAttribute("href");
-    window.scrollTo({
-      top: document.querySelector(`${sectionId}`).offsetTop,
-      behavior: "smooth",
-    });
-
-    // Forma alternativa
-    //   const section = qs(sectionId);
-    //   section.scrollIntoView({
-    //     behavior: "smooth",
-    //     block: "start",
-    //   });
+    this.toSection = this.toSection.bind(this);
   }
 
-  internalLinks.forEach((link) => {
-    link.addEventListener("click", toSection);
-  });
+  toSection(event) {
+    event.preventDefault();
+    const sectionId = event.currentTarget.getAttribute("href");
+    const section = document.querySelector(sectionId);
+    section.scrollIntoView(this.options);
+
+    // Forma Alternativa
+    // const sectionId = this.getAttribute("href");
+    // window.scrollTo({
+    //   top: document.querySelector(`${sectionId}`).offsetTop,
+    //   behavior: "smooth",
+    // });
+  }
+
+  addLinkEvent() {
+    this.linksInternos.forEach((link) => {
+      link.addEventListener("click", this.toSection);
+    });
+  }
+
+  init() {
+    if (this.linksInternos.length) {
+      this.addLinkEvent();
+    }
+    return this;
+  }
 }
