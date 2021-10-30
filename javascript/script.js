@@ -4,8 +4,9 @@ initTabNav();
 import initAccordionList from "./accordionList.js";
 initAccordionList();
 
-import initSmoothScroll from "./smoothScroll.js";
-initSmoothScroll();
+import SmoothScroll from "./smoothScroll.js";
+const scrollSuave = new SmoothScroll("[data-menu='suave'] a[href^='#']");
+scrollSuave.init();
 
 import initScrollAnimation from "./scrollAnimation.js";
 initScrollAnimation();
