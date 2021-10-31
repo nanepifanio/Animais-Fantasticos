@@ -13,8 +13,14 @@ scrollSuave.init();
 import initScrollAnimation from "./scrollAnimation.js";
 initScrollAnimation();
 
-import initModal from "./modal.js";
-initModal();
+import Modal from "./modal.js";
+const modal = new Modal(
+  "[data-modal='abrir']",
+  "[data-modal='fechar']",
+  "[data-modal='container']",
+  "ativo"
+);
+modal.init();
 
 import initToolTip from "./tooltip.js";
 initToolTip();
