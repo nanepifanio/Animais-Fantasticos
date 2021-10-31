@@ -1,26 +1,34 @@
-export default function initTabNav() {
-  const imgsAnimais = document.querySelectorAll("[data-animais='tabNav']");
-  const animaisSection = document.querySelectorAll("[data-anime]");
-  const activeClass = "ativo";
+export default class TabNav {
+  constructor(imgs, sections, cls) {
+    this.imgsAnimais = document.querySelectorAll(imgs);
+    this.animaisSection = document.querySelectorAll(sections);
+    this.activeClass = cls;
+  }
 
-  if (animaisSection.length && imgsAnimais.length) {
-    animaisSection[0].classList.add(
-      animaisSection[0].dataset.anime,
-      activeClass
-    );
+  toAnimalDescription(index) {
+    const dataAnime = this.animaisSection[index].dataset.anime;
+    this.animaisSection.forEach((section) => {
+      section.classList.remove(this.activeClass);
+    });
+    this.animaisSection[index].classList.add(this.activeClass, dataAnime);
+  }
 
-    function toAnimalDescription(index) {
-      const dataAnime = animaisSection[index].dataset.anime;
-      animaisSection.forEach((section) => {
-        section.classList.remove(activeClass);
-      });
-      animaisSection[index].classList.add(activeClass, dataAnime);
-    }
-
-    imgsAnimais.forEach((img, index) => {
+  addTabNavListener() {
+    this.imgsAnimais.forEach((img, index) => {
       img.addEventListener("click", () => {
-        toAnimalDescription(index);
+        this.toAnimalDescription(index);
       });
     });
+  }
+
+  init() {
+    if (this.animaisSection.length && this.imgsAnimais.length) {
+      this.animaisSection[0].classList.add(
+        this.animaisSection[0].dataset.anime,
+        this.activeClass
+      );
+      this.addTabNavListener();
+    }
+    return this;
   }
 }

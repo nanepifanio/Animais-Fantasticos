@@ -1,5 +1,6 @@
-import initTabNav from "./tabNav.js";
-initTabNav();
+import TabNav from "./tabNav.js";
+const tabNav = new TabNav("[data-animais='tabNav']", "[data-anime]", "ativo");
+tabNav.init();
 
 import AccordionList from "./accordionList.js";
 const accordion = new AccordionList("[data-faq-anime='accordion']", "ativo");
