@@ -1,8 +1,9 @@
 import initTabNav from "./tabNav.js";
 initTabNav();
 
-import initAccordionList from "./accordionList.js";
-initAccordionList();
+import AccordionList from "./accordionList.js";
+const accordion = new AccordionList("[data-faq-anime='accordion']", "ativo");
+accordion.init();
 
 import SmoothScroll from "./smoothScroll.js";
 const scrollSuave = new SmoothScroll("[data-menu='suave'] a[href^='#']");
