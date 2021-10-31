@@ -14,9 +14,9 @@ export default class Modal {
     document.addEventListener("click", (event) => {
       event.preventDefault();
       const target = event.target;
-      if (target.dataset.modal === "abrir") this.toggleModal();
-      if (target.dataset.modal === "fechar") this.toggleModal();
-      if (target.dataset.modal === "container") this.toggleModal();
+      if (target === this.abrir) this.toggleModal();
+      if (target === this.fechar) this.toggleModal();
+      if (target === this.container) this.toggleModal();
     });
   }
 
