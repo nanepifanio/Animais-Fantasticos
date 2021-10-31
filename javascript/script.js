@@ -38,5 +38,5 @@ initFuncionamento();
 import fetchAnimais from "./fetch-animais.js";
 fetchAnimais("../animaisapi.json", ".numeros-grid");
 
-import initFetchBitcoin from "./fetch-bitcoin.js";
-initFetchBitcoin();
+import fetchBitcoin from "./fetch-bitcoin.js";
+fetchBitcoin("https://blockchain.info/ticker", ".btc-preco");
