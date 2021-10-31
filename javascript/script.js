@@ -35,8 +35,8 @@ initMenuMobile();
 import initFuncionamento from "./funcionamento.js";
 initFuncionamento();
 
-import initFetchAnimais from "./fetch-animais.js";
-initFetchAnimais();
+import fetchAnimais from "./fetch-animais.js";
+fetchAnimais("../animaisapi.json", ".numeros-grid");
 
 import initFetchBitcoin from "./fetch-bitcoin.js";
 initFetchBitcoin();
