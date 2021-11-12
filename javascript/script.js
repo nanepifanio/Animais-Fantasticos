@@ -10,8 +10,12 @@ import SmoothScroll from "./smoothScroll.js";
 const scrollSuave = new SmoothScroll("[data-menu='suave'] a[href^='#']");
 scrollSuave.init();
 
-import initScrollAnimation from "./scrollAnimation.js";
-initScrollAnimation();
+import ScrollAnima from "./scrollAnima.js";
+const scrollAnima = new ScrollAnima(
+  "[data-section-anime='scrollAnime']",
+  "ativo"
+);
+scrollAnima.init();
 
 import Modal from "./modal.js";
 const modal = new Modal(
