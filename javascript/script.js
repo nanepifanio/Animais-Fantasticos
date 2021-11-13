@@ -34,8 +34,13 @@ import DropDownMenu from "./dropdown-menu.js";
 const dropDown = new DropDownMenu("[data-dropdown]", "ativo");
 dropDown.init();
 
-import initMenuMobile from "./menu-mobile.js";
-initMenuMobile();
+import MenuMobile from "./menu-mobile.js";
+const menuMobile = new MenuMobile(
+  '[data-menu="button"]',
+  '[data-menu="list"]',
+  "ativo"
+);
+menuMobile.init();
 
 import initFuncionamento from "./funcionamento.js";
 initFuncionamento();
